@@ -906,3 +906,70 @@ textarea.form-control {
   font-weight: 300;
   font-family: cursive;
 }
+
+
+/* footer */
+/* .footer {
+  background:  url('../../assets/images/footerbg.jpg') ;
+  color: white;
+  padding: 50px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
+  background: linear-gradient(#366946, #569f6d), 
+  url('../../assets/images/footerbg.jpg') center/cover no-repeat;
+} */
+
+.footer-top {
+  background: #fdd61f;
+  padding: 10px 0;
+  width: 50%;
+  height:100px;
+  margin-left: 350px;
+  margin-bottom: 50px;
+  
+  
+}
+
+.footer-top .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-top i {
+  font-size: 18px;
+  color: #000;
+}
+
+.footer-top p {
+  color: #000;
+  font-weight: bold;
+  margin: 0;
+}
+
+.footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), 
+              url('../../assets/images/footerbg.jpg') center/cover no-repeat;
+  color: white;
+  padding: 50px 0;
+}
+
+.footer h5 {
+  color: #fdd61f;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.social-links a {
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #fdd61f;
+}
