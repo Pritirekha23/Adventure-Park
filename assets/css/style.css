@@ -364,8 +364,6 @@ h1 {
 
 
 /* family holidays */
-/* Increase the Left Side Image Size */
-/* Full-width background image */
 .full-width-bg {
     position: relative;
     background: url('/assets/images/famhomemain.jpg') center/cover no-repeat;
@@ -379,14 +377,13 @@ h1 {
 /* Overlay for better readability */
 .text-container {
     position: relative;
-    background: rgba(19, 35, 26, 0.85); /* Dark overlay */
+    background: rgba(19, 35, 26, 0.85); 
     padding: 50px;
     border-radius: 10px;
     text-align: center;
     max-width: 70%;
 }
 
-/* Ensures Text Stays Visible */
 .overlay-content {
     z-index: 2;
     padding: 20px;
@@ -430,4 +427,164 @@ h1 {
 .progress-circle span {
     position: absolute;
     font-size: 18px;
+}
+
+/* Ticket Packages Section */
+
+.ticket-head {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: cursive;
+}
+
+.ticket-head-span {
+    color: #1e7e34;
+}
+
+/* Card Container: Flex Layout */
+.ticket-card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+/* Individual Ticket Card */
+.ticket-card {
+    flex: 1; 
+    max-width: 350px; 
+    min-width: 280px; 
+    /* background: #fff; */
+    border-radius: 10px;
+    padding: 20px;
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #00190a;
+}
+
+.ticket-card:hover {
+    transform: translateY(-5px); 
+}
+
+/* Ticket Title */
+.ticket-title {
+    color: #1e7e34;
+    font-size: 20px;
+    /* font-weight: bold; */
+}
+
+/* Price */
+.ticket-price {
+    font-size: 24px;
+    font-weight: 500;
+    color: #1e7e34;
+    margin: 10px 0;
+}
+
+/* Description */
+.ticket-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+
+.book-now-btn:hover {
+    background: #155d26;
+}
+
+/* Responsive Fix */
+@media (max-width: 992px) {
+    .ticket-card-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .ticket-card {
+        max-width: 100%;
+    }
+}
+
+
+/* why choose us section */
+
+.features-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px;
+}
+
+/* Left & Right Sections */
+.features-left, .features-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 45%;
+}
+
+/* Individual Feature Box */
+.feature-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 15px;
+    align-items: center;
+}
+
+/* Icons */
+.feature-icon {
+    font-size: 24px;
+    color: #FDD61F;
+
+   
+}
+/* Icon Box (Ensuring the Icon is Centered) */
+.feature-icon-box {
+    background-color: #00190a;
+    border-radius: 5px;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Text */
+.feature-text {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Vertical Yellow Line */
+.vertical-line {
+    width: 5px;
+    height: 180px;
+    background: #FDD61F;
+    border-radius: 5px;
+    
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .features-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vertical-line {
+        height: 5px;
+        width: 50%;
+        margin: 20px 0;
+    }
+
+    .features-left, .features-right {
+        width: 100%;
+        align-items: center;
+    }
 }
