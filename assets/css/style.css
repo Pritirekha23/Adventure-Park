@@ -860,3 +860,49 @@ textarea.form-control {
   font-size: 16px;
   color: #eae5e5;
 }
+
+
+/* News & Articles Section */
+.blog-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-blog-sec{
+  width: 18rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-blog-sec:hover {
+  transform: translateY(-5px);
+}
+
+.card-blog-sec-title {
+  color: #218838;
+  font-weight: bold;
+}
+
+.card-blog-sec-text {
+  font-size: 14px;
+  color: #555;
+}
+
+.date, .author {
+  font-size: 12px;
+  color: #777;
+}
+.card-img-top{
+  height: 80%;
+  width: 100%;
+  object-fit:cover;
+}
+.blog-head{
+  font-size: 32px;
+  font-weight: 300;
+  font-family: cursive;
+}
