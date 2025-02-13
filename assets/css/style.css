@@ -910,8 +910,19 @@ textarea.form-control {
   text-transform: uppercase;
 }
 
-
 /* footer */
+/* .footer {
+  background:  url('../../assets/images/footerbg.jpg') ;
+  color: white;
+  padding: 50px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
+  background: linear-gradient(#366946, #569f6d), 
+  url('../../assets/images/footerbg.jpg') center/cover no-repeat;
+} */
+
 .footer-top {
   background: #fdd61f; 
   padding: 20px 0;
@@ -952,7 +963,7 @@ textarea.form-control {
   margin: 0;
 }
 
-/* Footer Main Section */
+
 .footer {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), 
               url('../../assets/images/footerbg.jpg') center/cover no-repeat;
@@ -976,32 +987,37 @@ textarea.form-control {
 .social-links a:hover {
   color: #fdd61f;
 }
-
-/* Recent Posts Section */
 .custom-container {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px; 
 }
 
-.custom-container .left img {
-  width: 60px;
+.left img {
+  width: 60px; 
   height: 60px;
-  border-radius: 5px; 
+  border-radius: 10px; 
   object-fit: cover;
 }
 
-.custom-container .right p {
-  margin: 0;
+.right .date {
   font-size: 14px;
-  color: #ddd;
+  color: #888;
+  margin-bottom: 5px;
 }
 
-.custom-container .right h6 {
-  margin: 5px 0 0;
-  font-size: 16px;
-  color: white;
+.right .subtitle {
+  font-size: 18px;
   font-weight: bold;
+  color: #28a745;
+}
+/* Copyright Section */
+.footer-bottom {
+  background: #222;
+  padding: 10px 0;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #ccc;
 }
 
 /* Copyright Section */
