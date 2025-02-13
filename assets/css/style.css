@@ -335,37 +335,31 @@ h1 {
 .speventcards-sec{
     margin-left: 110px;
 }
+
 .image-wrappers {
     position: relative;
     display: inline-block;
 }
 
 .image-wrappers img {
-    display: block; 
-    width: 100%; 
+    display: block;
+    width: 100%;
     height: auto;
 }
 
 .date-overlay {
     position: absolute;
-    top: 50%;
-    left: 20px;
-    transform: translateY(-50%) rotate(-90deg);
+    top: 20px; 
+    left: 20px; 
     background-color: #FDD61F;
     color: black;
     font-weight: bold;
-    margin-top: 100px;
-    padding: 10px 100px;
+    padding: 10px 20px;
     border-radius: 5px;
     font-size: 14px;
     white-space: nowrap;
-    transform-origin: left center;
     z-index: 10;
-     /* Ensures it appears above the image */:;
-    -webkit-transform: translateY(-50%) rotate(-90deg);
-    -moz-transform: translateY(-50%) rotate(-90deg);
-    -ms-transform: translateY(-50%) rotate(-90deg);
-    -o-transform: translateY(-50%) rotate(-90deg);
 }
+
 
 
