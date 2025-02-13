@@ -44,7 +44,7 @@ html {
 }
 
 /* header */
-/* Navbar Styling */
+
 .custom-navbar {
   padding: 15px 0;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -79,7 +79,7 @@ html {
 }
 
 /* Header */
-/* Header Top Section Styling */
+
 .header-top-bg {
   background-color: #0e2207 !important;
   padding: 3px 0;
@@ -112,21 +112,30 @@ html {
 .top-head-contact-icon {
   color: #fdd61f;
 }
+
 .custom-btn {
   background: #00190a;
   color: white !important;
-  padding: 8px 20px;
-  border-radius: 50px;
+  padding: 12px 20px;  
+  font-size: 16px;     
+  font-weight: 600;    
+  border-radius: 30px; 
   transition: all 0.3s ease-in-out;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
   border: 2px solid #fdd61f;
+  cursor: pointer;     
+  display: inline-block;
+  text-transform: uppercase; 
 }
 
+/* Hover Effect */
 .custom-btn:hover {
-  background: linear-gradient(45deg, #218838, #1e7e34);
-  transform: translateY(-3px); /* Slight lift effect */
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  background: #fdd61f;
+  color: #00190a !important;
+  border-color: #00190a;
+  transform: scale(1.05); 
 }
+
 
 /* navbar-main-menu */
 .navbar-main-menu ul li a {
@@ -454,10 +463,8 @@ h1 {
   flex: 1;
   max-width: 350px;
   min-width: 280px;
-  /* background: #fff; */
   border-radius: 10px;
   padding: 20px;
-  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 2px solid #00190a;
@@ -538,7 +545,7 @@ h1 {
   font-size: 24px;
   color: #fdd61f;
 }
-/* Icon Box (Ensuring the Icon is Centered) */
+/* Icon Box  */
 .feature-icon-box {
   background-color: #00190a;
   border-radius: 5px;
@@ -663,7 +670,6 @@ h1 {
 /* Input Fields */
 .form-control {
   border-radius: 5px;
-  /* background: rgba(255, 255, 255, 0.6); */
   background: #0c7735;
   border: 0.6px solid #afb1b2;
   padding: 10px;
@@ -911,18 +917,6 @@ textarea.form-control {
 }
 
 /* footer */
-/* .footer {
-  background:  url('../../assets/images/footerbg.jpg') ;
-  color: white;
-  padding: 50px 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.8);
-  background: linear-gradient(#366946, #569f6d), 
-  url('../../assets/images/footerbg.jpg') center/cover no-repeat;
-} */
-
 .footer-top {
   background: #fdd61f; 
   padding: 20px 0;
