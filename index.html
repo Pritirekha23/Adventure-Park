@@ -566,50 +566,189 @@
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
       </div>
     </section>
 
     <!-- Gallery Section -->
-    <section class="section-padding">
+    <section class="section-paddings">
       <div class="container">
-        <h2 class="text-center mb-5">Gallery</h2>
-        <p class="text-center">Take a look at our stunning resort.</p>
-        <div class="row">
-          <div class="col-md-4">
-            <img src="https://picsum.photos/300/200" class="img-fluid" />
-          </div>
-          <div class="col-md-4">
-            <img src="https://picsum.photos/300/200" class="img-fluid" />
-          </div>
-          <div class="col-md-4">
-            <img src="https://picsum.photos/300/200" class="img-fluid" />
+        <p class="text-center about-text">Latest From</p>
+        <h2 class="text-center abtus-header">
+          Our <span class="abtus-header-span"> Gallery </span>
+        </h2>
+
+        <div
+          id="galleryCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4">
+                  <img
+                    src="/assets/images/gal8.jpg"
+                    class="img-fluid"
+                    alt="Gallery Image 1"
+                  />
+                </div>
+                <div class="col-md-4">
+                  <img
+                    src="/assets/images/gal2.jpg"
+                    class="img-fluid"
+                    alt="Gallery Image 2"
+                  />
+                </div>
+                <div class="col-md-4">
+                  <img
+                    src="/assets/images/gal3.jpg"
+                    class="img-fluid"
+                    alt="Gallery Image 3"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <img
+                    src="/assets/images/gal4.jpg"
+                    class="img-fluid"
+                    alt="Gallery Image 4"
+                  />
+                </div>
+                <div class="col-md-4">
+                  <img
+                    src="/assets/images/gal5.jpg"
+                    class="img-fluid"
+                    alt="Gallery Image 5"
+                  />
+                </div>
+                <div class="col-md-4">
+                  <img
+                    src="/assets/images/gal6.jpg"
+                    class="img-fluid"
+                    alt="Gallery Image 6"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Booking Section -->
-    <section class="section-padding bg-light">
+    <section class="section-padding booking-section mt-5">
       <div class="container">
-        <h2 class="text-center mb-5">Book Your Stay</h2>
-        <form>
-          <div class="mb-3">
-            <label for="name" class="form-label">Full Name</label>
-            <input type="text" class="form-control" id="name" />
+        <div class="row align-items-center">
+          <!-- Left Side - Form -->
+          <div class="col-md-6 form-container">
+            <p class="booking-text-head">Booking</p>
+            <h2 class="abtus-header booking-text mb-5">
+              Book Us <span class="booking-header-span"> Instantly</span>
+            </h2>
+            
+            <form>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Name"
+                    id="name"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your Email"
+                    id="email"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    placeholder="Mobile Number"
+                    id="mobile"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="Number of Guests"
+                    id="guests"
+                    min="1"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <select class="form-control" id="suite-type" required>
+                    <option value="" disabled selected style="color:#afb1b2">
+                      Select Suite Type
+                    </option>
+                    <option value="standard">Standard Suite</option>
+                    <option value="deluxe">Deluxe Suite</option>
+                    <option value="vip">VIP Suite</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Specifications "
+                    id="specifications"
+                  />
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="checkin"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="checkout"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  placeholder="Requesting Something"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn custom-btn">Book Now</button>
+            </form>
+
           </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" />
-          </div>
-          <div class="mb-3">
-            <label for="date" class="form-label">Check-in Date</label>
-            <input type="date" class="form-control" id="date" />
-          </div>
-          <button type="submit" class="btn btn-primary">Book Now</button>
-        </form>
+        </div>
       </div>
     </section>
 
