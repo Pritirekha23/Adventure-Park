@@ -96,7 +96,7 @@
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light custom-navbar">
         <div class="container">
-          <a class="navbar-brand" href="#"
+          <a class="navbar-brand" href="#" id="home"
             >ADVENTURE <span class="navbar-span">PARK</span>
           </a>
           <button
@@ -128,6 +128,12 @@
                 <a class="nav-link" href="#blog">Blog</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#events">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#shop">Shop</a>
               </li>
             </ul>
@@ -139,14 +145,14 @@
             <a href="#" class="icon-link"
               ><i class="bi bi-shopping-cart"></i
             ></a>
-            <a class="btn custom-btn ms-3" href="#">Get Free Quote</a>
+            <a class="btn custom-btn ms-3" href="#" id="book">Get Free Quote</a>
           </div>
         </div>
       </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-section">
+    <section class="hero-section" id="home">
       <div class="hero-content text-center">
         <p class="text-white">Discover a whole new world of fun</p>
         <h1 class="display-4 text-white">
@@ -158,7 +164,7 @@
     </section>
 
     <!-- Features Section -->
-    <section class="activities-section section-padding">
+    <section class="activities-section section-padding" id="services">
       <div class="container">
         <!-- Section Heading -->
         <div class="text-center mb-5">
@@ -212,7 +218,7 @@
     </section>
 
     <!-- About Section -->
-    <section class="section-padding">
+    <section class="section-padding" id="about">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6">
@@ -259,7 +265,7 @@
     </section>
 
     <!-- Accommodation  Section -->
-    <section class="section-padding bg-light">
+    <section class="section-padding bg-light" id="about">
       <div class="container text-center accommodation-con-header">
         <p>Accommodation We Offer</p>
         <h2 class="accommodation-sec-header">
@@ -305,7 +311,7 @@
     </section>
 
     <!-- special event Section -->
-    <section class="section-padding">
+    <section class="section-padding" id="events">
       <div class="container">
         <p class="text-center">Special Events</p>
         <h2 class="text-center spevent-head">
@@ -449,7 +455,7 @@
     </section>
 
     <!-- Pricing / Ticket Packages Section -->
-    <section class="section-padding">
+    <section class="section-padding" id="shop" >
       <div class="container-fluid">
         <p class="text-center">Book Now</p>
         <h2 class="text-center ticket-head">
@@ -572,7 +578,7 @@
     </section>
 
     <!-- Gallery Section -->
-    <section class="section-paddings">
+    <section class="section-paddings" id="gallery">
       <div class="container">
         <p class="text-center about-text">Latest From</p>
         <h2 class="text-center abtus-header">
@@ -641,7 +647,7 @@
     </section>
 
     <!-- Booking Section -->
-    <section class="section-padding booking-section mt-5">
+    <section class="section-padding booking-section mt-5" id="book">
       <div class="container">
         <div class="row align-items-center">
           <!-- Left Side - Form -->
@@ -752,7 +758,7 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="section-padding">
+    <section class="section-padding" id="faq">
       <div class="container">
         <p class="text-center faq-text-head">Frequently Asked</p>
         <h2 class="text-center faq-header mb-5">
@@ -968,113 +974,102 @@
         <!-- Top Section with Address, Email & Phone -->
         <div class="footer-top">
             <div class="container d-flex justify-content-between align-items-center flex-wrap">
-              <div class="d-flex align-items-center">
-                <i class="fas fa-map-marker-alt"></i>
-                <p class="mb-0">  ADDRESS :<br/>123 Adventure Road</p>
-              </div>
-              <div class="d-flex align-items-center">
-                <i class="fas fa-envelope"></i>
-                <p class="mb-0">  EMAIL :<br/>contact@example.com</p>
-              </div>
-              <div class="d-flex align-items-center">
-                <i class="fas fa-phone"></i>
-                <p class="mb-0">
-                    PHONE :<br/>
-                    +91 7657654590</p>
-              </div>
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p class="mb-0"> ADDRESS :<br />123 Adventure Road</p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-envelope"></i>
+                    <p class="mb-0"> EMAIL :<br />contact@example.com</p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-phone"></i>
+                    <p class="mb-0">PHONE :<br />+91 7657654590</p>
+                </div>
             </div>
-          </div>
-          
-      
+        </div>
+    
         <!-- Main Footer Content -->
         <div class="container">
-          <div class="row">
-            <!-- Contact Us -->
-            <div class="col-md-3">
-              <h2>
-                ADVENTURE <span class="navbar-span">PARK</span></h2>
-                <form>
-                    <div class="input-group mb-2">
-                      <input type="email" class="form-controls" placeholder="Your email">
-                      <button class="btn custom-btn" type="submit">GO</button>
+            <div class="row">
+                <!-- Contact Us -->
+                <div class="col-md-3">
+                    <h2>ADVENTURE <span class="navbar-span">PARK</span></h2>
+                    <form>
+                        <div class="input-group mb-2">
+                            <input type="email" class="form-controls" placeholder="Your email">
+                            <button class="btn custom-btn" type="submit">GO</button>
+                        </div>
+                    </form>
+                    <!-- Social Media Icons -->
+                    <div class="social-links mt-3">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
                     </div>
-                  </form>
-                  <!-- Social Media Icons -->
-<div class="social-links mt-3">
-    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
-    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-    <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
-  </div>
-                  
-            </div>
-      
-            <!-- Follow Us -->
-            <div class="col-md-3">
-              <h5>Navigations</h5>
-              <div class="list-unstyled">
-                <li><a href="#" class="text-white">Home</a></li>
-                <li><a href="#" class="text-white">About</a></li>
-                <li><a href="#" class="text-white">Services</a></li>
-                <li><a href="#" class="text-white">Contact</a></li>
-                <li><a href="#" class="text-white">Meet Our Team</a></li>
-                <li><a href="#" class="text-white">News & Media</a></li>
-              </div>
-            </div>
-      
-            <!-- Quick Links -->
-            <div class="col-md-3">
-              <h5>Explore Links</h5>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-white">Cookie Policy</a></li>
-                <li><a href="#" class="text-white">Careers</a></li>
-                <li><a href="#" class="text-white">Services</a></li>
-                <li><a href="#" class="text-white">Policy</a></li>
-                <li><a href="#" class="text-white">Contact Us</a></li>
-              </ul>
-            </div>
-      
-            <!-- Newsletter -->
-            <div class="col-md-3">
-                <h5>Recent Posts</h5>
-                
-                <!-- Post 1 -->
-                <div class="custom-container d-flex align-items-center mb-3">
-                  <!-- Left: Image -->
-                  <div class="left">
-                    <img src="/assets/images/gal3.jpg" alt="Thumbnail" > 
-                  </div>
-                
-                  <!-- Right: Date & Subtitle -->
-                  <div class="right ms-3">
-                    <p class="date">📅 May 12, 2024</p>
-                    <h6>Latest News & Updates</h6>
-                  </div>
                 </div>
-              
-                <!-- Post 2 -->
-                <div class="custom-container d-flex align-items-center">
-                  <!-- Left: Image -->
-                  <div class="left">
-                    <img src="/assets/images/gal2.jpg" alt="Thumbnail">
-                  </div>
-                
-                  <!-- Right: Date & Subtitle -->
-                  <div class="right ms-3">
-                    <p class="date">📅 May 15, 2024</p>
-                    <h6>Upcoming Tech Trends</h6>
-                  </div>
+    
+                <!-- Navigation -->
+                <div class="col-md-3">
+                    <h5>Navigations</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Home</a></li>
+                        <li><a href="#" class="text-white">About</a></li>
+                        <li><a href="#" class="text-white">Services</a></li>
+                        <li><a href="#" class="text-white">Contact</a></li>
+                        <li><a href="#" class="text-white">Meet Our Team</a></li>
+                        <li><a href="#" class="text-white">News & Media</a></li>
+                    </ul>
                 </div>
-                
-              </div>
-              
+    
+                <!-- Explore Links -->
+                <div class="col-md-3">
+                    <h5>Explore Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Cookie Policy</a></li>
+                        <li><a href="#" class="text-white">Careers</a></li>
+                        <li><a href="#" class="text-white">Services</a></li>
+                        <li><a href="#" class="text-white">Policy</a></li>
+                        <li><a href="#faq" class="text-white" FAQ</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Recent Posts -->
+                <div class="col-md-3">
+                    <h5>Recent Posts</h5>
+    
+                    <!-- Post 1 -->
+                    <div class="custom-container d-flex align-items-center mb-3">
+                        <div class="left">
+                            <img src="/assets/images/gal3.jpg" alt="Thumbnail">
+                        </div>
+                        <div class="right ms-3">
+                            <p class="date">📅 May 12, 2024</p>
+                            <h6>Latest News & Updates</h6>
+                        </div>
+                    </div>
+    
+                    <!-- Post 2 -->
+                    <div class="custom-container d-flex align-items-center">
+                        <div class="left">
+                            <img src="/assets/images/gal2.jpg" alt="Thumbnail">
+                        </div>
+                        <div class="right ms-3">
+                            <p class="date">📅 May 15, 2024</p>
+                            <h6>Upcoming Tech Trends</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-         <!-- Copyright Section -->
-    <div class="footer-bottom text-center">
-        <p class="mb-0">© 2025 Adventure Park. All rights reserved.</p>
-    </div>
-      </footer>
-      
+    
+        <!-- Copyright Section -->
+        <div class="footer-bottom text-center">
+            <p class="mb-0">Copyright © 2025 Adventure Park. All rights reserved. ~ Designed by <span style="color:#0C7735">Pritirekha Panda</span> </p>
+        </div>
+    </footer>
+    
       
 
 
