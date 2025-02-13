@@ -5,15 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adventure Park</title>
     <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
 
+    <!-- Bootstrap Icons (Ensure it's included if using 'bi bi-*' icons) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Font Awesome (Replace 'your-kit-code' with your actual kit) -->
+    <script
+      src="https://kit.fontawesome.com/YOUR_ACTUAL_KIT_CODE.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Ionicons -->
     <script
       type="module"
       src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -26,11 +39,13 @@
   <body>
     <!-- Header & Navigation -->
     <header>
-      <div class="header-top bg-light py-2">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center header-top-bg"
+      >
         <div
-          class="container d-flex justify-content-between align-items-center"
+          class="container d-flex justify-content-between align-items-center header-top-bg"
         >
-          <ul class="list-unstyled d-flex mb-0">
+          <ul class="header-top-sec list-unstyled d-flex mb-0">
             <li>
               <a href="#" class="me-3"
                 ><ion-icon name="logo-facebook"></ion-icon
@@ -50,22 +65,31 @@
               <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
             </li>
           </ul>
-          <p class="mb-0"><b>Free Shipping</b> This Week Order Over - $55</p>
+
           <div>
-            <select class="me-2">
-              <option>USD $</option>
-              <option>EUR €</option>
-            </select>
-            <select>
-              <option>English</option>
-              <option>Español</option>
-              <option>Français</option>
-            </select>
+            <ul class="contact-info list-unstyled mb-0">
+              <li class="d-inline me-3">
+                <ion-icon
+                  name="mail-outline"
+                  class="top-head-contact-icon"
+                ></ion-icon>
+                adventureinfo@example.com
+              </li>
+              <li class="d-inline">
+                <ion-icon
+                  name="location-outline"
+                  class="top-head-contact-icon"
+                ></ion-icon>
+                775 Rolling Green Rd.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- Navbar -->
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light custom-navbar">
         <div class="container">
           <a class="navbar-brand" href="#">Adventure Park</a>
           <button
@@ -76,24 +100,41 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav mx-auto">
               <li class="nav-item">
                 <a class="nav-link" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#pages">Pages</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#activities">Activities</a>
+                <a class="nav-link" href="#about">Activities</a>
               </li>
               <li class="nav-item">
-                <a class="btn btn-primary ms-2" href="#">Book Now</a>
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#shop">Shop</a>
               </li>
             </ul>
           </div>
+
+          <!-- Search, Cart, and Button -->
+          <div class="navbar-icons">
+            <a href="#" class="icon-link"><i class="bi bi-search"></i></a>
+            <a href="#" class="icon-link"><i class="bi bi-shopping-cart"></i></a>
+            <a class="btn custom-btn ms-3" href="#">Get Free Quote</a>
+          </div>
         </div>
       </nav>
+
     </header>
 
     <!-- Hero Section -->
