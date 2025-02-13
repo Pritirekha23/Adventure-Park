@@ -640,7 +640,6 @@ h1 {
     color: white;
 }
 
-/* Overlay to Improve Text Readability */
 .booking-section::before {
     content: "";
     position: absolute;
@@ -676,12 +675,12 @@ h1 {
     border: 0.6px solid #afb1b2;
     padding: 10px;
 }
-/* Placeholder color for input and textarea */
+
 ::placeholder {
   color: #afb1b2 !important;
 }
 
-/* Default text color for select */
+
 #suite-type:invalid,
 #checkin,
 #checkout {
@@ -708,4 +707,57 @@ textarea.form-control {
 }
 .booking-text-head{
     color: #fff;
+}
+
+
+/* faq section */
+.faq-header{
+  font-size: 32px;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-family: cursive;
+}
+.faq-header-span{
+  color:#1e7e34
+}
+.faq-content {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+.faq-column {
+  width: 50%;
+}
+.accordion {
+  background: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border: 2px solid rgb(124, 124, 115);
+}
+.accordion__question {
+  background: #fff;
+  color: black;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.accordion__answer {
+  display: none;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background: #fff;
+}
+.accordion.active .accordion__answer {
+  display: block;
+}
+.faq-icon-acc{
+  background-color: yellow;
+  padding: 5px;
+  border-radius: 4px;
+
 }

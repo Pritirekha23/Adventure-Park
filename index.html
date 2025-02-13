@@ -650,7 +650,7 @@
             <h2 class="abtus-header booking-text mb-5">
               Book Us <span class="booking-header-span"> Instantly</span>
             </h2>
-            
+
             <form>
               <div class="row mb-3">
                 <div class="col-md-6">
@@ -698,7 +698,7 @@
               <div class="row mb-3">
                 <div class="col-md-6">
                   <select class="form-control" id="suite-type" required>
-                    <option value="" disabled selected style="color:#afb1b2">
+                    <option value="" disabled selected style="color: #afb1b2">
                       Select Suite Type
                     </option>
                     <option value="standard">Standard Suite</option>
@@ -746,7 +746,6 @@
 
               <button type="submit" class="btn custom-btn">Book Now</button>
             </form>
-
           </div>
         </div>
       </div>
@@ -755,9 +754,65 @@
     <!-- FAQ Section -->
     <section class="section-padding">
       <div class="container">
-        <h2 class="text-center mb-5">Frequently Asked Questions</h2>
-        <p class="text-center">Find answers to common questions.</p>
-      </div>
+        <p class="text-center faq-text-head">Frequently Asked</p>
+        <h2 class="text-center faq-header mb-5">
+          Most Popular <span class="faq-header-span"> Questions</span>
+        </h2>
+
+        <div class="faq-content">
+            <div class="faq-column">
+                <div class="accordion">
+                    <div class="accordion__question">Donec elementum eros ac sapien vestibulum? <i class="bi bi-plus-lg" class="faq-icon-acc"></i></div>
+                    <div class="accordion__answer">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion__question">Vestibulum ut turpis at lacus dictum gravida? <i class="bi bi-plus-lg" class="faq-icon-acc"></i></div>
+                    <div class="accordion__answer">
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion__question">Vestibulum ut turpis at lacus dictum gravida? <i class="bi bi-plus-lg" class="faq-icon-acc"></i></div>
+                    <div class="accordion__answer">
+                        <p>Phasellus eget velit Nam sit amet risus non augue pellentesque dictumvel velit ullamcorper gravida ut at orci.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion__question">Donec elementum eros ac sapien vestibulum? <i class="bi bi-plus-lg" class="faq-icon-acc"></i></div>
+                    <div class="accordion__answer">
+                        <p>Curabitur at quam nNam sit amet risus non augue pellentesque dictumec justo tincidunt auctor.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-column">
+                <div class="accordion">
+                    <div class="accordion__question">Donec elementum eros ac sapien vestibulum? <i class="bi bi-plus-lg" class="faq-icon-acc"></i></div>
+                    <div class="accordion__answer">
+                        <p>Aliquam erat volutpat. Mauris accumsan metus sit amet eniNam sit amet risus non augue pellentesque dictumm.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion__question">Donec elementum eros ac sapien vestibulum? <i class="bi bi-plus-lg" class="faq-icon-acc"></i></div>
+                    <div class="accordion__answer">
+                        <p>Fusce sodales, metus ut feugiat sodales, arcu nisl aliquNam sit amet risus non augue pellentesque dictumet augue.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion__question">Donec elementum eros ac sapien vestibulum?<i class="bi bi-plus-lg" class="faq-icon-acc"></i></div>
+                    <div class="accordion__answer">
+                        <p>Sed dapibus, sapien ut pretium venenatis, lectus lacus Nam sit amet risus non augue pellentesque dictumfacilisis nisl.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion__question">Donec elementum eros ac sapien vestibulum? <i class="bi bi-plus-lg" class="faq-icon-acc"></i></div>
+                    <div class="accordion__answer">
+                        <p>Nam sit amet risus non augue pellentesque dictumNam sit amet risus non augue pellentesque dictum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Testimonials Section -->
@@ -807,6 +862,14 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      let faqs = document.querySelectorAll(".accordion");
+      faqs.forEach((faq) => {
+        faq.addEventListener("click", () => {
+          faq.classList.toggle("active");
+        });
+      });
+    </script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const circles = document.querySelectorAll(".progress-circle");
