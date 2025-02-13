@@ -1,119 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adventure Park</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
-    
-</head>
-<body>
 
-<!-- Header & Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-        <a class="navbar-brand" href="#">Adventure Park</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#activities">Activities</a></li>
-                <li class="nav-item"><a class="btn btn-primary ms-2" href="#">Book Now</a></li>
-            </ul>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header>
+      <div class="header-top bg-light py-2">
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <ul class="list-unstyled d-flex mb-0">
+            <li>
+              <a href="#" class="me-3"
+                ><ion-icon name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="me-3"
+                ><ion-icon name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="me-3"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </li>
+          </ul>
+          <p class="mb-0"><b>Free Shipping</b> This Week Order Over - $55</p>
+          <div>
+            <select class="me-2">
+              <option>USD $</option>
+              <option>EUR €</option>
+            </select>
+            <select>
+              <option>English</option>
+              <option>Español</option>
+              <option>Français</option>
+            </select>
+          </div>
         </div>
-    </div>
-</nav>
+      </div>
 
-<!-- Hero Section -->
-<section class="hero-section">
-    <div class="text-center">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">Adventure Park</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#activities">Activities</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-primary ms-2" href="#">Book Now</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="text-center">
         <h1 class="display-4">Welcome to Adventure Park</h1>
         <button class="btn btn-primary btn-lg mt-3">Explore Now</button>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- Features Section -->
-<section class="section-padding bg-light">
-    <div class="container">
+    <!-- Features Section -->
+    <section class="section-padding bg-light">
+      <div class="container">
         <div class="row text-center">
-            <div class="col-md-3">
-                <i class="fas fa-hiking activity-icon"></i>
-                <h4>Hiking</h4>
-            </div>
-            <!-- Repeat for other activities -->
+          <div class="col-md-3">
+            <i class="fas fa-hiking activity-icon"></i>
+            <h4>Hiking</h4>
+          </div>
+          <!-- Repeat for other activities -->
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- About Section -->
-<section class="section-padding">
-    <div class="container">
+    <!-- About Section -->
+    <section class="section-padding">
+      <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-6">
-                <img src="https://picsum.photos/500/300" alt="About" class="img-fluid">
-            </div>
-            <div class="col-md-6">
-                <h2>The Best Theme and Adventure Park</h2>
-                <p>Description text...</p>
-                <button class="btn btn-primary">Learn More</button>
-            </div>
+          <div class="col-md-6">
+            <img
+              src="https://picsum.photos/500/300"
+              alt="About"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-6">
+            <h2>The Best Theme and Adventure Park</h2>
+            <p>Description text...</p>
+            <button class="btn btn-primary">Learn More</button>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- Accommodation Section -->
-<section class="section-padding bg-light">
-    <div class="container">
-        <h2 class="text-center mb-5">Best Staycation with Our Premium Facilities</h2>
+    <!-- Accommodation Section -->
+    <section class="section-padding bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">
+          Best Staycation with Our Premium Facilities
+        </h2>
         <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://picsum.photos/300/200" class="card-img-top">
-                    <div class="card-body">
-                        <h5>Tree House</h5>
-                        <button class="btn btn-primary">Book Now</button>
-                    </div>
-                </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://picsum.photos/300/200" class="card-img-top" />
+              <div class="card-body">
+                <h5>Tree House</h5>
+                <button class="btn btn-primary">Book Now</button>
+              </div>
             </div>
-            <!-- Repeat for other stays -->
+          </div>
+          <!-- Add more stay options here -->
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- Footer -->
-<footer class="bg-dark text-white py-5">
-    <div class="container">
+    <!-- Special Event Section -->
+    <section class="section-padding">
+      <div class="container">
+        <h2 class="text-center mb-5">Special Events</h2>
+        <p class="text-center">Celebrate your special moments with us.</p>
         <div class="row">
-            <div class="col-md-4">
-                <h5>Contact Us</h5>
-                <p>Address: 123 Adventure Road</p>
-            </div>
-            <div class="col-md-4">
-                <h5>Follow Us</h5>
-                <div class="social-links">
-                    <a href="#" class="text-white me-2"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <h5>Quick Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-white">Home</a></li>
-                </ul>
-            </div>
+          <div class="col-md-6">
+            <img src="https://picsum.photos/500/300" class="img-fluid" />
+          </div>
+          <div class="col-md-6">
+            <p>
+              Host weddings, corporate events, and private parties in our
+              luxurious spaces.
+            </p>
+          </div>
         </div>
-    </div>
-</footer>
+      </div>
+    </section>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <!-- Family Holidays Section -->
+    <section class="section-padding bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Family Holidays</h2>
+        <p class="text-center">Enjoy a perfect family vacation with us.</p>
+      </div>
+    </section>
+
+    <!-- Pricing / Ticket Packages Section -->
+    <section class="section-padding">
+      <div class="container">
+        <h2 class="text-center mb-5">Our Pricing & Ticket Packages</h2>
+        <p class="text-center">Choose the best package for your stay.</p>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section-padding bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Why Choose Us?</h2>
+        <p class="text-center">
+          Discover why we are the best option for your stay.
+        </p>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section-padding">
+      <div class="container">
+        <h2 class="text-center mb-5">Gallery</h2>
+        <p class="text-center">Take a look at our stunning resort.</p>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="https://picsum.photos/300/200" class="img-fluid" />
+          </div>
+          <div class="col-md-4">
+            <img src="https://picsum.photos/300/200" class="img-fluid" />
+          </div>
+          <div class="col-md-4">
+            <img src="https://picsum.photos/300/200" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="section-padding bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Book Your Stay</h2>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" />
+          </div>
+          <div class="mb-3">
+            <label for="date" class="form-label">Check-in Date</label>
+            <input type="date" class="form-control" id="date" />
+          </div>
+          <button type="submit" class="btn btn-primary">Book Now</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding">
+      <div class="container">
+        <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+        <p class="text-center">Find answers to common questions.</p>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section-padding bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">What Our Guests Say</h2>
+        <p class="text-center">Read reviews from our happy guests.</p>
+      </div>
+    </section>
+
+    <!-- News & Articles Section -->
+    <section class="section-padding">
+      <div class="container">
+        <h2 class="text-center mb-5">Latest News & Articles</h2>
+        <p class="text-center">Stay updated with our latest stories.</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Contact Us</h5>
+            <p>Address: 123 Adventure Road</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Follow Us</h5>
+            <div class="social-links">
+              <a href="#" class="text-white me-2"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="text-white me-2"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Home</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
